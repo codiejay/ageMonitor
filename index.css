@@ -1,0 +1,33 @@
+@import url(//db.onlinewebfonts.com/c/971c473a19b6bba1059ba6add6af78d7?family=OCR+A+Extended);
+body { 
+  display: table;
+}
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: OCR A Extended;
+}
+
+
+#container { 
+  width: 100vw;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#container h3 { 
+  width: 40%;
+  text-align: left;
+  margin: 0 auto;
+  font-size: 3em;
+  color: rgb(231, 231, 231);
+}
+
+#container p { 
+  color: rgb(44, 44, 44);
+  font-size: 4.6em;
+  padding: 0.4em 0;
+}

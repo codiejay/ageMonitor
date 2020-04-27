@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Age Monitor</title>
+  <link rel='stylesheet' href='./index.css'>
+  <link href="//db.onlinewebfonts.com/c/971c473a19b6bba1059ba6add6af78d7?family=OCR+A+Extended" rel="stylesheet" type="text/css"/> 
+</head>
+<body>
+  <div id= 'container'>
+    <h3>Age</h3>
+    <p id='myAge'>      
+      0000
+      </p>
+  </div>
+</body>
+<script>
+
+  setInterval(() => {
+    //setting the age to ZERO at first 
+    let age = 0;
+    //My birth Date. 
+    let birthDate = new Date(1997, 4, 11, 4, 4, 8, 0);
+
+    //Current Date
+    let currentTime = new Date();
+
+    //Now I divide the MS by 31556952000 to get the time passed and divide by my birthdate's
+    age = (currentTime.getTime() / 31556952000 ) - (birthDate.getTime() / 31556952000);
+
+    //it returns a DECIMAL point, I use the method below to get it out!
+    let newAge = age.toString().replace('.', '');
+    document.querySelector('#myAge').innerText = newAge
+  }, 300)
+  
+</script>
+</html>
