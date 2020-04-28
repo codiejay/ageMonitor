@@ -5,7 +5,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Age Monitor</title>
   <link rel='stylesheet' href='./index.css'>
-  <link href="//db.onlinewebfonts.com/c/971c473a19b6bba1059ba6add6af78d7?family=OCR+A+Extended" rel="stylesheet" type="text/css"/> 
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id= 'container'>
@@ -30,7 +30,7 @@
     age = (currentTime.getTime() / 31556952000 ) - (birthDate.getTime() / 31556952000);
 
     //it returns a DECIMAL point, I use the method below to get it out!
-    let newAge = age.toString().replace('.', '');
+    let newAge = age.toString()
     document.querySelector('#myAge').innerText = newAge
   }, 300)
   
